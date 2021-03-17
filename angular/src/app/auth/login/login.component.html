@@ -1,0 +1,45 @@
+<div class="parent">
+  <div class="child1" id="loginBox">
+    <ul class="nav nav-tabs text-center" id="myTab" role="tablist" style="justify-content: center;">
+      <li class="nav-item Customer">
+        <a class="nav-link active" id="userLoginButton" data-toggle="tab" href="#user" role="tab" aria-controls="user" aria-selected="true">User</a>
+      </li>
+      <li class="nav-item Seller">
+        <a class="nav-link" id="adminLoginButton" data-toggle="tab" href="#admin" role="tab" aria-controls="admin" aria-selected="false">Admin</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="user" role="tabpanel" aria-labelledby="user">
+        <h2 class="text-center pt-4 ">Login</h2>
+        <div class="form-group pt-3">
+          <label for="userEmail">Email address</label>
+          <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" placeholder="Enter User Email">
+        </div>
+        <div class="form-group">
+          <label for="userPassword">Password</label>
+          <input type="password" class="form-control" id="userPassword" placeholder="User Password">
+        </div>
+        <div class="subdiv">
+          <button type="submit" class="btn btn-danger" id="userSubmitButton">Submit</button>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="admin" role="tabpanel" aria-labelledby="admin">
+        <h2 class="text-center pt-4 ">Login</h2>
+        <div class="form-group pt-3">
+          <label for="adminEmail">Email address</label>
+          <input type="email" class="form-control" id="adminEmail" aria-describedby="emailHelp" placeholder="Enter Admin email">
+        </div>
+        <div class="form-group">
+          <label for="adminPassword">Password</label>
+          <input type="password" class="form-control" id="adminPassword" placeholder="Admin Password">
+        </div>
+        <div class="subdiv">
+          <button type="submit" class="btn btn-danger" id="adminSubmitButton">Submit</button>
+        </div>
+      </div>
+      <div class="text-center">
+        <small>Are you new to Booking? <a href="" id="signupLink">Click Here</a></small>
+      </div>
+    </div>
+  </div>
+</div>

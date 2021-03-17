@@ -1,0 +1,27 @@
+.parent {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  align-items: center;
+  min-height: 100vh;
+}
+
+.child1 {
+  display: flex;
+  flex-direction: column;
+  width:400px;
+  /* height:400px; */
+  background-color:#F2F2F2;
+  padding:30px 30px 30px 30px;
+  border-radius: 15px;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+button {
+  margin-top: 25px;
+}
+
+a {
+  /* color:yellow; */
+}
