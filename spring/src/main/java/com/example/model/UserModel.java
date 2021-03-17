@@ -11,6 +11,7 @@ public class UserModel {
 	String password;
 	String mobileNumber;
 	String username;
+	String userRole;
 	int age;
 	public String getEmail() {
 		return email;
@@ -42,10 +43,17 @@ public class UserModel {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	
+	public String getUserRole() {
+		return userRole;
+	}
+	public void setUserRole(String userRole) {
+		this.userRole = userRole;
+	}
 	@Override
 	public String toString() {
 		return "UserModel [email=" + email + ", password=" + password + ", mobileNumber=" + mobileNumber + ", username="
-				+ username + ", age=" + age + "]";
+				+ username + ", userRole=" + userRole + ", age=" + age + "]";
 	}
-	
+
 }
