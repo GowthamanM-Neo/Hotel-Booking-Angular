@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.model.LoginModel;
 import com.example.model.SellerModel;
 import com.example.model.UserModel;
 import com.example.service.SellerRepository;
@@ -27,14 +28,18 @@ public class AuthController {
 	SellerRepository AdminRepo;
 	
 	//	User Login Method
-	@GetMapping("/user/login/{id}")
-	public boolean isUserPresent(@PathVariable String id) {
+	@PostMapping("/user/login")
+	public boolean isUserPresent(@RequestBody LoginModel data) {
 		try {
-			var a = UserRepo.findById(id); 
+			var a = UserRepo.findById(data.getEmail());
 			if(a.isEmpty()) {
 				return false;
 			}else {
-				return true;			
+				if(a.get().getPassword().equals(data.getPassword())) {
+					return true;								
+				}else {
+					return false;
+				}
 			}
 		}catch(Exception e){
 			return false;
@@ -43,13 +48,22 @@ public class AuthController {
 	}
 	
 	//	Admin Login Method
-	@GetMapping("/admin/login/{id}")
-	public boolean isAdminPresent(@PathVariable String id) {
-		var a = AdminRepo.findById(id); 
-		if(a.isEmpty()) {
+	@PostMapping("/admin/login")
+	public boolean isAdminPresent(@RequestBody LoginModel data) {
+		System.out.println(data);
+		try {
+			var a = AdminRepo.findById(data.getEmail());
+			if(a.isEmpty()) {
+				return false;
+			}else {
+				if(a.get().getPassword().equals(data.getPassword())) {
+					return true;								
+				}else {
+					return false;
+				}
+			}
+		}catch(Exception e){
 			return false;
-		}else {
-			return true;			
 		}
 	}
 	
