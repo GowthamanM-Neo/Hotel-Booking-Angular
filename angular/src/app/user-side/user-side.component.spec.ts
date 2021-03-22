@@ -1,14 +1,14 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { AppComponent } from './app.component';
+import { UserSideComponent } from './user-side.component';
 
-describe('AppComponent', () => {
-  let component: AppComponent;
+describe('UserSideComponent', () => {
+  let component: UserSideComponent;
   beforeEach(() => {
-    const fixture = TestBed.createComponent(AppComponent);
+    const fixture = TestBed.createComponent(UserSideComponent);
     component = fixture.componentInstance;
   });
-  it('test_case1', () => {
+  it('test_case3', () => {
     expect(component).toBeTruthy();
   });
 });

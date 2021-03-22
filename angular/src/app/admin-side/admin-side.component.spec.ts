@@ -1,14 +1,14 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { AppComponent } from './app.component';
+import { AdminSideComponent } from './admin-side.component';
 
-describe('AppComponent', () => {
-  let component: AppComponent;
+describe('AdminSideComponent', () => {
+  let component: AdminSideComponent;
   beforeEach(() => {
-    const fixture = TestBed.createComponent(AppComponent);
+    const fixture = TestBed.createComponent(AdminSideComponent);
     component = fixture.componentInstance;
   });
-  it('test_case1', () => {
+  it('test_case2', () => {
     expect(component).toBeTruthy();
   });
 });

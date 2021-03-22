@@ -1,14 +1,14 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { AppComponent } from './app.component';
+import { AdminNavbarComponent } from './admin-navbar.component';
 
-describe('AppComponent', () => {
-  let component: AppComponent;
+describe('AdminNavbarComponent', () => {
+  let component: AdminNavbarComponent;
   beforeEach(() => {
-    const fixture = TestBed.createComponent(AppComponent);
+    const fixture = TestBed.createComponent(AdminNavbarComponent);
     component = fixture.componentInstance;
   });
-  it('test_case1', () => {
+  it('test_case17', () => {
     expect(component).toBeTruthy();
   });
 });
