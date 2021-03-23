@@ -1,25 +1,20 @@
-// import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+// import { RouterTestingModule } from '@angular/router/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import { LoginComponent } from './login.component';
 
-// import { LoginComponent } from './login.component';
-
-// describe('LoginComponent', () => {
-//   let component: LoginComponent;
-//   let fixture: ComponentFixture<LoginComponent>;
-
-//   beforeEach(async () => {
-//     await TestBed.configureTestingModule({
-//       declarations: [ LoginComponent ]
-//     })
-//     .compileComponents();
-//   });
-
-//   beforeEach(() => {
-//     fixture = TestBed.createComponent(LoginComponent);
-//     component = fixture.componentInstance;
-//     fixture.detectChanges();
-//   });
-
-//   it('should create', () => {
-//     expect(component).toBeTruthy();
-//   });
-// });
+describe('LoginComponent', () => {
+  let component: LoginComponent;
+  beforeEach(() => TestBed.configureTestingModule({
+    imports: [HttpClientTestingModule], 
+    providers: [LoginComponent]
+  }));
+  beforeEach(() => {
+    const fixture = TestBed.createComponent(LoginComponent);
+    component = fixture.componentInstance;
+  });
+  it('test_case19', () => {
+    expect(component).toBeTruthy();
+  });
+});
