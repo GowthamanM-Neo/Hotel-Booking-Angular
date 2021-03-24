@@ -1,6 +1,9 @@
 package com.example.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,5 +28,10 @@ public class RoomController {
 		r.setStatus(room.getStatus());
 		RoomRepo.save(r);
 		
+	}
+	
+	@GetMapping("/admin/dashboard")
+	public List<RoomModel> getRooms() {
+		return  (List<RoomModel>) RoomRepo.findAll();
 	}
 }
