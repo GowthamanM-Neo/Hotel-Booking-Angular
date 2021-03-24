@@ -17,6 +17,7 @@ import { AdminProfileComponent } from './admin-side/admin-profile/admin-profile.
 import { UserDashboardComponent } from './user-side/user-dashboard/user-dashboard.component';
 import { UserProfileComponent } from './user-side/user-profile/user-profile.component';
 import { SuperAdminDashboardComponent } from './super-admin-side/super-admin-dashboard/super-admin-dashboard.component';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { SuperAdminDashboardComponent } from './super-admin-side/super-admin-das
     AdminProfileComponent,
     UserDashboardComponent,
     UserProfileComponent,
-    SuperAdminDashboardComponent
+    SuperAdminDashboardComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
