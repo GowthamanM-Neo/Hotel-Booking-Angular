@@ -15,6 +15,7 @@ public class SellerModel {
 	String hotelName;
 	String hotelImageURL;
 	String hotelAddress;
+	int earnings;
 	public String getEmail() {
 		return email;
 	}
@@ -63,11 +64,18 @@ public class SellerModel {
 	public void setHotelImageURL(String hotelImageURL) {
 		this.hotelImageURL = hotelImageURL;
 	}
+	public int getEarnings() {
+		return earnings;
+	}
+	public void setEarnings(int earnings) {
+		this.earnings = earnings;
+	}
 	@Override
 	public String toString() {
 		return "SellerModel [email=" + email + ", password=" + password + ", mobileNumber=" + mobileNumber
 				+ ", sellerName=" + sellerName + ", userRole=" + userRole + ", hotelName=" + hotelName
-				+ ", hotelImageURL=" + hotelImageURL + ", hotelAddress=" + hotelAddress + "]";
+				+ ", hotelImageURL=" + hotelImageURL + ", hotelAddress=" + hotelAddress + ", earnings=" + earnings
+				+ "]";
 	}
 	
 }

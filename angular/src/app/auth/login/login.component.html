@@ -13,28 +13,42 @@
         <h2 class="text-center pt-4 ">Login</h2>
         <div class="form-group pt-3">
           <label for="userEmail">Email address</label>
-          <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" placeholder="Enter User Email">
+          <input type="email" 
+          class="form-control" 
+          id="userEmail" 
+          aria-describedby="emailHelp" 
+          placeholder="Enter User Email" [(ngModel)]="userEmail">
         </div>
         <div class="form-group">
           <label for="userPassword">Password</label>
-          <input type="password" class="form-control" id="userPassword" placeholder="User Password">
+          <input type="password" 
+          class="form-control" 
+          id="userPassword" 
+          placeholder="User Password" [(ngModel)]="userPassword">
         </div>
         <div class="subdiv">
-          <button type="submit" class="btn btn-danger" id="userSubmitButton">Submit</button>
+          <button type="submit" class="btn btn-danger" id="userSubmitButton" (click)="userSubmit()">Submit</button>
         </div>
       </div>
       <div class="tab-pane fade" id="admin" role="tabpanel" aria-labelledby="admin">
         <h2 class="text-center pt-4 ">Login</h2>
         <div class="form-group pt-3">
           <label for="adminEmail">Email address</label>
-          <input type="email" class="form-control" id="adminEmail" aria-describedby="emailHelp" placeholder="Enter Admin email">
+          <input type="email" 
+          class="form-control" 
+          id="adminEmail" 
+          aria-describedby="emailHelp" 
+          placeholder="Enter Admin email" [(ngModel)]="adminEmail">
         </div>
         <div class="form-group">
           <label for="adminPassword">Password</label>
-          <input type="password" class="form-control" id="adminPassword" placeholder="Admin Password">
+          <input type="password" 
+          class="form-control" 
+          id="adminPassword" 
+          placeholder="Admin Password" [(ngModel)]="adminPassword">
         </div>
         <div class="subdiv">
-          <button type="submit" class="btn btn-danger" id="adminSubmitButton">Submit</button>
+          <button type="submit" class="btn btn-danger" id="adminSubmitButton" (click)="adminSubmit()">Submit</button>
         </div>
       </div>
       <div class="text-center">
@@ -43,3 +57,5 @@
     </div>
   </div>
 </div>
+
+<p>{{loginFlag}}</p>

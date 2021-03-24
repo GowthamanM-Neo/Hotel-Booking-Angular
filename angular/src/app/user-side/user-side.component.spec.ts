@@ -1,19 +1,19 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { AppComponent } from './app.component';
+import { UserSideComponent } from './user-side.component';
 
-describe('AppComponent', () => {
-  let component: AppComponent;
+describe('UserSideComponent', () => {
+  let component: UserSideComponent;
   beforeEach(()=>TestBed.configureTestingModule({
     imports:[HttpClientTestingModule],
-    providers:[AppComponent]
+    providers:[UserSideComponent]
   }))
   beforeEach(() => {
-    const fixture = TestBed.createComponent(AppComponent);
+    const fixture = TestBed.createComponent(UserSideComponent);
     component = fixture.componentInstance;
   });
-  it('test_case11', () => {
+  it('test_case3', () => {
     expect(component).toBeTruthy();
   });
 });
